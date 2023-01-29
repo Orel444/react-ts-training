@@ -4,9 +4,9 @@
   line-height: 24px;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: black;
-  background-color: #242424;
+  /* color-scheme: light dark;*/
+  color: white;
+  /* background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -36,7 +36,7 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
+/*
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -54,7 +54,7 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+}*/
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -64,7 +64,35 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
-  button {
+  /*button {
     background-color: #f9f9f9;
-  }
+  }*/
+}
+
+.App {
+  position: relative;
+  height: 400 px;
+  width: 200px;
+  background: lightblue;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal > div {
+  width: 60%;
+  background-color: #ffffff;
+  padding: 20px;
+  min-height: 200px;
+  border-radius: 5px;
 }

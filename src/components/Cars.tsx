@@ -1,20 +1,18 @@
 import React from "react";
 
 const Car = ({children, color, year}: { children: string , color: string, 
-    year: string }) => {
+    year: number }) => {
     
     const colorInfo = 
     color ? (<p>Couleur: { color}</p>) : (<p>Couleur: néant</p>)
 
     if(children) {
         return (
-            <div style={ {backgroundColor:'pink',
-            width: '400px', padding:'10px',
-            margin: '5px auto'}}>
-                <p>Marque: {children}</p>
+            <tr>
+                <td><p>Marque: {children}</p></td>
                 <p>Année: {year}</p>
                 {colorInfo}
-            </div>
+            </tr>
         );
     } else {
         return null;
